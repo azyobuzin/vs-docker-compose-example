@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mydatabaseapp:
+    build:
+      context: ..
+      dockerfile: MyDatabaseApp/Dockerfile
+
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./db/data:/var/lib/postgresql/data

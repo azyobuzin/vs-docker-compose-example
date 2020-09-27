@@ -1,0 +1,14 @@
+{
+  "dockerComposeFile": [
+    "docker-compose.yml",
+    "docker-compose.vscode.yml"
+  ],
+  // docker-compose.yml の services のうち、開発環境につかうもの
+  "service": "mydatabaseapp",
+  // docker-compose.vscode.yml で指定したマウント先
+  "workspaceFolder": "/workspace",
+  // 事前にインストールしておいてほしい拡張
+  "extensions": [
+    "ms-dotnettools.csharp"
+  ]
+}
